@@ -12,7 +12,7 @@ from curl import *
 def driver():
     screen_width, screen_height = pyautogui.size()
     options = Options()
-    options.add_argument(f"--window-size={screen_width},{screen_height}")
+    options.add_argument("--window-size=1400,1050")
     driver = webdriver.Chrome(options=options)
     driver.get(main_site)
     yield driver

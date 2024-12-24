@@ -55,7 +55,7 @@ class Test_Login:
         order_button = driver.find_element(*MainPageLocators.MAIN_ORDER_BUTTON)
         assert driver.current_url == main_site
 
-    def test_login_button_registration(self, driver):
+    def test_login_button_forgot_password(self, driver):
         # вход через кнопку в форме восстановления пароля
 
         driver.get(url_forgot_password)
