@@ -5,12 +5,10 @@ from generators import *
 from locators import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import pyautogui
 from curl import *
 
 @pytest.fixture
 def driver():
-    screen_width, screen_height = pyautogui.size()
     options = Options()
     options.add_argument("--window-size=1400,1050")
     driver = webdriver.Chrome(options=options)
